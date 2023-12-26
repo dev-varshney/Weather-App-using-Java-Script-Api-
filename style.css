@@ -7,10 +7,14 @@
 font-family: 'Varela Round', sans-serif;
 }
 body{
-    background: url(./assets/white-cloud-blue-sky\ \(1\).jpg);
-    background-repeat: no-repeat;
-    position: fixed;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
 }
+
+
 
 
 
@@ -18,7 +22,7 @@ body{
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     height: 600px;
     width: 500px;
-    margin: 80px 80px 200px 500px ;
+    
     border-radius: 12px;
 }
 .search-bar{
@@ -106,4 +110,32 @@ body{
     color:#FDFFFF;
     font-weight: 600;
     font-size: 20px;
+}
+@media(max-width:530px){
+    .card{
+        width:400px;
+    }
+
+}
+@media(max-width:430px){
+    .card{
+        width:300px;
+    }
+    .search-bar input {
+       width:198px;
+    }
+    .last-sec h2 {
+        font-size: 17px;
+    }
+    .last-sec h3 {
+        font-size: 16px;
+    }
+    .humidity {
+        gap: 5px;
+    }
+    .wind {
+        
+        gap: 05px;
+    }
+
 }
